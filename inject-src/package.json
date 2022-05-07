@@ -1,0 +1,19 @@
+{
+  "name": "inject-client",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "npm run build:js && npm run build:css",
+    "build:js": "npx esbuild src/index.js --bundle --minify --outfile=../inject/script.js",
+    "build:css": "npx esbuild style.css --bundle --minify --outfile=../inject/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.14.38",
+    "parcel": "^2.5.0"
+  }
+}
